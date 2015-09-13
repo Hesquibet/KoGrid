@@ -17,7 +17,7 @@ Add-Content $TempFile "* Authors: https://github.com/ericmbarnard/koGrid/blob/ma
 Add-Content $TempFile "* License: MIT (http://www.opensource.org/licenses/mit-license.php)";
 Add-Content $TempFile "* Compiled At: $compileTime";
 Add-Content $TempFile "***********************************************/`n"
-Add-Content $TempFile "(function (window) {";
+Add-Content $TempFile "define(['require','knockout','jquery'],function(req,ko,$){";
 Add-Content $TempFile "'use strict';";
 Foreach ($file in $files){
 	# Wrap each file output in a new line
@@ -35,7 +35,7 @@ Foreach ($file in $files){
 	    Add-Content $TempFile $fileContents;
 	}
 }
-Add-Content $TempFile "}(window));";
+Add-Content $TempFile "}";
 Get-Content $TempFile | Set-Content $OutputFile;
 Remove-Item $TempFile -Force;
 Copy-Item $OutputFile $FinalFile;
