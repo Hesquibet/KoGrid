@@ -35,7 +35,7 @@ Foreach ($file in $files){
 	    Add-Content $TempFile $fileContents;
 	}
 }
-Add-Content $TempFile "}";
+Add-Content $TempFile "})";
 Get-Content $TempFile | Set-Content $OutputFile;
 Remove-Item $TempFile -Force;
 Copy-Item $OutputFile $FinalFile;
