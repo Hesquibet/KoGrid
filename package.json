@@ -1,0 +1,25 @@
+{
+  "name": "knockout-grid",
+  "version": "2.1.1",
+  "description": "node version of KoGrid",
+  "main": "koGrid-2.1.1.debug.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hesquibet/KoGrid.git"
+  },
+  "keywords": [
+    "kogrid"
+  ],
+  "author": "Eric M. Barnard Tim Sweet Jonathon Ricaurte Alan Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hesquibet/KoGrid/issues"
+  },
+  "homepage": "https://github.com/Hesquibet/KoGrid#readme"
+}
